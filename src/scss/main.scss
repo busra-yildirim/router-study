@@ -1,0 +1,42 @@
+/* Imports */
+@import '_reset.scss';
+@import '_variables.scss';
+@import '_mixin.scss';
+
+
+:root{
+  font-size: 10px;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container{
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 700;
+margin: 50px auto;
+}
+@media (max-width: 1000px) {
+  .container  {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .card-item  {   
+      padding: 0px 30px;
+      width: 380px;
+
+      .card-item-text {
+        font-size: 10px;
+      }
+  }
+ 
+}

@@ -1,0 +1,48 @@
+@import '../scss/_variables.scss';
+@import '../scss/main.scss';
+
+
+.card-item {
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $bg-color;
+  border-radius: 5px;
+  margin: 20px 20px;
+    .card-item-text {
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 20px;
+
+          h2 {
+              color: rgba(41, 41, 41, 1);
+              text-transform:uppercase ;
+              line-height: 28px;
+              text-overflow: ellipsis;
+              margin-bottom: 5px;
+          }
+          p {
+              color: #757575;
+              font-weight: 200;
+              letter-spacing: 1px;
+          }
+        }
+    
+    .card-item-img {
+
+      flex: 0 0 200px;
+
+      img{
+       
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 0 5px 5px 0;
+      }
+      
+    }
+
+ 
+}
